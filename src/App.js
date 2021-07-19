@@ -1,14 +1,11 @@
 import logo from './logo.svg';
 import './styles/App.css';
+import NavBar from './components/navbar.js';
 
 function App() {
   return (
     <div className="App">
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Glossary of Dark Patterns</a>
-        </div>
-      </nav>
+      <NavBar/>
       <header className="App-header">
       </header>
       <main className="container">
