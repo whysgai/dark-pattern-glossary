@@ -1,6 +1,6 @@
 const GlossaryPage = props =>
-    <div>
-        <p>Page</p>
+    <div className="glossary-page">
+        <span>Page</span>
     </div>
 
 export default GlossaryPage;

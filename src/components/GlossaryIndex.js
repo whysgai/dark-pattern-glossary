@@ -1,6 +1,6 @@
 const GlossaryIndex = props =>
-    <div>
-        <p>Index</p>
+    <div className="glossary-index">
+        <span>Index</span>
     </div>
 
 export default GlossaryIndex;

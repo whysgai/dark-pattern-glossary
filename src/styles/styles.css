@@ -23,4 +23,17 @@ main.background {
 .glossary-card {
     height: 70vh;
     /* width: 70vw; */
+    flex-direction: row;
+}
+
+.glossary-index, .glossary-page {
+    display: inline-flex;
+}
+
+.glossary-index {
+    width: 34%;
+}
+
+.glossary-page {
+    width: 66%;
 }
