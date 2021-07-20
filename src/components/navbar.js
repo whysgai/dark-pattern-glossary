@@ -1,5 +1,5 @@
 const NavBar = props =>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar nav-stick navbar-light bg-light">
         <div class="navdiv">
             <a class="navbar-brand" href="#">Glossary of Dark Patterns</a>
         </div>

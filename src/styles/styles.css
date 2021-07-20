@@ -1,5 +1,26 @@
+.nav-stick {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 4vh;
+}
+
 .navdiv {
     width: 100%;
     display: flex;
     justify-content: center;
+}
+
+main.background {
+    background-color: #282c34;
+    height: 96vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.glossary-card {
+    height: 70vh;
+    /* width: 70vw; */
 }
