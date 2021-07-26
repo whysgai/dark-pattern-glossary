@@ -38,6 +38,11 @@ main.background {
     border-right: 1px solid rgba(0,0,0,.125);
 }
 
+.glossary-definition {
+    height: -webkit-fill-available;
+    min-height: 75%;
+}
+
 .glossary-page {
     width: 66%;
 }
