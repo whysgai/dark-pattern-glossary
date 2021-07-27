@@ -1,6 +1,7 @@
 import { useState } from "react";
 import './styles/App.css';
 import NavBar from './components/Navbar.js';
+import GlossaryHeader from "./components/GlossaryHeader.js";
 import GlossaryIndex from './components/GlossaryIndex.js';
 import GlossaryPage from './components/GlossaryPage.js';
 
@@ -19,7 +20,10 @@ const App = () => {
       <main className="background">
         <div className="container">
           <div className="card glossary-card">
-            <div className="card-header bg-light"><h2>Title</h2></div>
+            <GlossaryHeader
+              activeIndex={activeIndex}
+              selectEntry={selectEntry}
+            />
             <div className="glossary-card-body">
                 <GlossaryIndex
                   activeIndex={activeIndex}
