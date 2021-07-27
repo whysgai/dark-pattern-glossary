@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles/index.css';
