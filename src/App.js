@@ -5,7 +5,13 @@ import GlossaryIndex from './components/GlossaryIndex.js';
 import GlossaryPage from './components/GlossaryPage.js';
 
 const App = () => {
-  const [activeIndex, setIndex] = useState("Welcome");
+  const [activeIndex, setActiveIndex] = useState("Welcome");
+
+
+  const selectEntry = entry => {
+    console.log("Selected: ", entry);
+    setActiveIndex(entry);
+  }
 
   return (
     <div className="App">
@@ -15,7 +21,10 @@ const App = () => {
           <div className="card glossary-card">
             <div className="card-header bg-light"><h2>Title</h2></div>
             <div className="glossary-card-body">
-                <GlossaryIndex/>
+                <GlossaryIndex
+                  activeIndex={activeIndex}
+                  selectEntry={selectEntry}
+                />
                 <GlossaryPage/>
             </div>
           </div>

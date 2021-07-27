@@ -5,7 +5,9 @@ const GlossaryIndex = props =>
         {
             Indices.indices.map((entry, index) => 
                 <button key={index} type="button"
-                className="list-group-item list-group-item-action">
+                    className={`list-group-item list-group-item-action ${entry == props.activeIndex ? "active" : ""}`}
+                    onClick={() => props.selectEntry(entry)}
+                >
                     <span>{entry}</span>
                 </button>
             )
