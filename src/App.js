@@ -29,7 +29,9 @@ const App = () => {
                   activeIndex={activeIndex}
                   selectEntry={selectEntry}
                 />
-                <GlossaryPage/>
+                <GlossaryPage
+                  activeIndex={activeIndex}
+                />
             </div>
           </div>
         </div>

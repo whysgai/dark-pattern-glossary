@@ -46,3 +46,7 @@ main.background {
 .glossary-page {
     width: 66%;
 }
+
+.confirmshaming ul {
+    list-style: none;
+}
