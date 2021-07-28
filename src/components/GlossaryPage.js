@@ -1,5 +1,6 @@
 import Confirmshaming from "./Confirmshaming";
 import DisguisedAds from "./DisguisedAds";
+import SwitchedAnswers from "./SwitchedAnswers";
 import TrammelNet from "./TrammelNet";
 
 const GlossaryPage = props =>
@@ -24,7 +25,7 @@ const GlossaryPage = props =>
                                     <span>Opt-Ins</span> 
                                     :
                                     props.activeIndex === "Switchted Answers" ?
-                                        <span>Switchted Answers</span> 
+                                        <SwitchedAnswers/> 
                                         :
                                         props.activeIndex === "Trammel Net" ?
                                             <TrammelNet/> 
