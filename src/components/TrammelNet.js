@@ -10,7 +10,7 @@ const TrammelNet = () => {
                     <>
                         <h3>Are you sure you want to cancel your subscription?</h3>
                         <button onClick={() => setPage(0)}>Nevermind, I don't want to miss out!</button>
-                        <a href="#" onClick={() => setPage(1)}>Yes</a>
+                        <a href="#" onClick={() => setPage(1)}>Yes (This cannot be undone)</a>
                     </>
                     :
                     page === 1 ?
@@ -66,7 +66,9 @@ const TrammelNet = () => {
                                 <a href="#" onClick={() => setPage(3)}>Leave</a>
                             </>
                             :
-                            <></>
+                            <>
+                                <h3>You have cancelled your subscription</h3>
+                            </>
 
             }
         </div>        
