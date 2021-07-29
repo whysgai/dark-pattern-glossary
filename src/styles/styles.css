@@ -50,3 +50,7 @@ main.background {
 .confirmshaming ul {
     list-style: none;
 }
+
+.bat-signal-progress {
+    width: 75%;
+}
