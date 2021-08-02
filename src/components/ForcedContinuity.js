@@ -46,11 +46,11 @@ const ForcedContinuity = () => {
                                 <input type="email"></input>
                             </label>
                             <label>
-                                Experation Month
+                                Expiration Month
                                 <input type="email"></input>
                             </label>
                             <label>
-                                Experation Year
+                                Expiration Year
                                 <input type="email"></input>
                             </label>
                             <button onClick={() => setPage(2)}>Continue</button>
