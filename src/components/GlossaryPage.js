@@ -1,5 +1,6 @@
 import Confirmshaming from "./Confirmshaming";
 import DisguisedAds from "./DisguisedAds";
+import ForcedContinuity from "./ForcedContinuity";
 import OptIns from "./OptIns";
 import SwitchedAnswers from "./SwitchedAnswers";
 import TrammelNet from "./TrammelNet";
@@ -20,7 +21,7 @@ const GlossaryPage = props =>
                             <DisguisedAds/> 
                             :
                             props.activeIndex === "Forced Continuity" ?
-                                <span>Forced Continuity</span> 
+                                <ForcedContinuity/> 
                                 :
                                 props.activeIndex === "Opt-Ins" ?
                                     <OptIns/>

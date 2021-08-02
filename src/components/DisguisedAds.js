@@ -2,7 +2,7 @@ const DisguisedAds = () =>
     <div>
         <h3>Search Results</h3>
         <label>
-            <input placeholder="pie"/>
+            <input placeholder="pie near me"/>
         </label>
         <ul className="results-list">
             <li className="result">
