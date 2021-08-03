@@ -1,5 +1,6 @@
 import AdditionalItems from "./AdditionalItems";
 import Confirmshaming from "./Confirmshaming";
+import DeceptiveTimers from "./DeceptiveTimers";
 import DisguisedAds from "./DisguisedAds";
 import ForcedContinuity from "./ForcedContinuity";
 import OptIns from "./OptIns";
@@ -16,7 +17,7 @@ const GlossaryPage = props =>
                     <Confirmshaming/> 
                     :
                     props.activeIndex === "Deceptive Timers" ?
-                        <span>Deceptive Timers</span> 
+                        <DeceptiveTimers/> 
                         :
                         props.activeIndex === "Disguised Ads" ?
                             <DisguisedAds/> 

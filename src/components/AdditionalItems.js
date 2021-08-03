@@ -6,8 +6,7 @@ const AdditionalItems = () => {
     const [cartCount, setCartCount] = useState(0);
 
     return (
-        <div>
-            <h3>Begin Your Free Trial</h3>            
+        <div>        
             {
                 page === 0 ?
                 // shopping page
