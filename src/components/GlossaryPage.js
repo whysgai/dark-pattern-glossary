@@ -1,3 +1,4 @@
+import AdditionalItems from "./AdditionalItems";
 import Confirmshaming from "./Confirmshaming";
 import DisguisedAds from "./DisguisedAds";
 import ForcedContinuity from "./ForcedContinuity";
@@ -9,7 +10,7 @@ const GlossaryPage = props =>
     <div className="glossary-page">
         {
             props.activeIndex === "Additional Items" ?
-                <span>Additional Items</span> 
+                <AdditionalItems/> 
                 :
                 props.activeIndex === "Confirm-shaming" ?
                     <Confirmshaming/> 

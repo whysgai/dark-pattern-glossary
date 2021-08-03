@@ -12,7 +12,6 @@ const GlossaryIndex = props =>
                 </button>
             )
         }
-        {/* <div className="bg-light glossary-definition"><span>Hello</span></div> */}
     </div>
 
 export default GlossaryIndex;
