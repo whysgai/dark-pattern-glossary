@@ -34,8 +34,8 @@ const AdditionalItems = () => {
                             <h3>Added to cart!</h3>
                             <p>You just added <span>{totalDoohickies}</span> Doohicky Set(s) to your cart!</p>
                             <p>Items in cart: <span>{totalDoohickies + 5}</span></p>
-                            <button>View Cart</button>
-                            <button>Continue Shopping</button>
+                            <button onClick={() => setPage(2)}>View Cart</button>
+                            <button onClick={() => setPage(1)}>Continue Shopping</button>
                         </>
                         :
                         page === 2 ?

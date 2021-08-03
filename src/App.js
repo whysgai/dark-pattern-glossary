@@ -33,6 +33,7 @@ const App = () => {
                   activeIndex={activeIndex}
                 />
             </div>
+            <div className="card-footer">footer</div>
           </div>
         </div>
       </main>

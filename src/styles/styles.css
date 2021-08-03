@@ -26,6 +26,7 @@ main.background {
 
 .glossary-card-body {
     height: 100%;
+    display: flex;
 }
 
 .glossary-index, .glossary-page {
@@ -47,10 +48,66 @@ main.background {
     width: 66%;
 }
 
+.btn-medium-text {
+    font-weight: 600;
+    font-size: larger;
+}
+
+.link-innocuous {
+    color: gray;
+    font-weight: 100;
+}
+
 .confirmshaming ul {
     list-style: none;
 }
 
 .bat-signal-progress {
     width: 75%;
+}
+
+.trammel-net {
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.trammel-net .card {
+    margin: 10% 10%;
+}
+
+.trammel-net .card-body {
+    padding: 7% 7%;
+}
+
+.trammel-net .card-body > * {
+    margin-bottom: 2vh;
+}
+
+.trammel-net-plans-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.trammel-net-plan {
+    padding: 0 1vw;
+    flex-grow: 1;
+    width: 33%;
+}
+
+.trammel-net-plan:nth-child(2) {
+    border-left: thin black solid;
+    border-right: thin black solid;
+}
+
+.trammel-net-plan ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.trammel-net-plan li {
+    padding-bottom: 0.5vh;
 }
