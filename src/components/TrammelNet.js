@@ -51,7 +51,7 @@ const TrammelNet = () => {
                                             <li>Monthly newsletter</li>
                                             {/* <li>Your name on our subscriber wall</li> */}
                                         </ul>
-                                        <button>Learn more</button>
+                                        <button className="btn btn-outline-success">Learn more</button>
                                     </div>
                                     <div className="trammel-net-plan">
                                         <h4>Plan 2</h4>
@@ -63,7 +63,7 @@ const TrammelNet = () => {
                                             <li>Email technical support</li>
                                             <li>Desktop app</li>
                                         </ul>
-                                        <button>Learn more</button>
+                                        <button className="btn btn-outline-success">Learn more</button>
                                     </div>
                                     <div className="trammel-net-plan">
                                         <h4>Plan 3</h4>
@@ -77,11 +77,11 @@ const TrammelNet = () => {
                                             <li>Hand-picked recommendations</li>
                                             <li>Ad-free experience</li>
                                         </ul>
-                                        <button>Learn more</button>
+                                        <button className="btn btn-outline-success">Learn more</button>
                                     </div>
                                 </div>
-                                <button>Stay</button>
-                                <a href="#" onClick={() => setPage(3)}>Leave</a>
+                                <button className="btn btn-success" onClick={() => setPage(0)}>Stay</button>
+                                <a href="#" className="link-innocuous" onClick={() => setPage(3)}>Leave</a>
                             </>
                             :
                             <>
