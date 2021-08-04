@@ -66,7 +66,7 @@ main.background {
     width: 75%;
 }
 
-.trammel-net, .switched-answers {
+.trammel-net, .switched-answers, .optins {
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -84,6 +84,12 @@ main.background {
 
 .standard-layout .card-body > * {
     margin-bottom: 2vh;
+}
+
+
+
+.optins .btn-terms input, .optins .check-data input, .optins .check-spam input {
+    margin-left: 2vw;
 }
 
 .switched-answers .eula {
