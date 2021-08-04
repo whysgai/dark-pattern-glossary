@@ -4,7 +4,7 @@ const TrammelNet = () => {
     const [page, setPage] = useState(0);
     
     return (
-        <div className="trammel-net">
+        <div className="trammel-net standard-layout">
             <div className="card card-body">
             {
                 page === 0 ?

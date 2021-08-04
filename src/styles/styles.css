@@ -66,7 +66,7 @@ main.background {
     width: 75%;
 }
 
-.trammel-net {
+.trammel-net, .switched-answers {
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -74,16 +74,23 @@ main.background {
     align-items: center;
 }
 
-.trammel-net .card {
+.standard-layout .card {
     margin: 10% 10%;
 }
 
-.trammel-net .card-body {
+.standard-layout .card-body {
     padding: 7% 7%;
 }
 
-.trammel-net .card-body > * {
+.standard-layout .card-body > * {
     margin-bottom: 2vh;
+}
+
+.switched-answers .eula {
+    border: thin solid black;
+    overflow-y: scroll;
+    max-height: 10vh;
+    text-align: start;
 }
 
 .trammel-net-plans-row {
