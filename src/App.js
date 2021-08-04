@@ -1,6 +1,6 @@
 import { useState } from "react";
 import './styles/App.css';
-import NavBar from './components/Navbar.js';
+import Navbar from "./components/Navbar";
 import GlossaryHeader from "./components/GlossaryHeader.js";
 import GlossaryIndex from './components/GlossaryIndex.js';
 import GlossaryPage from './components/GlossaryPage.js';
@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar/>
+      <Navbar/>
       <main className="background">
         <div className="container">
           <div className="card glossary-card">
