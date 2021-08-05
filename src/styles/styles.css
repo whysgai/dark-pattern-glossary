@@ -48,6 +48,10 @@ main.background {
     width: 66%;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 .btn-medium-text {
     font-weight: 600;
     font-size: larger;
@@ -62,7 +66,7 @@ main.background {
     width: 75%;
 }
 
-.trammel-net, .switched-answers, .optins, .forced-continuity, .disguised-ads, .confirmshaming {
+.trammel-net, .switched-answers, .optins, .forced-continuity, .disguised-ads, .confirmshaming, .deceptive-timers {
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -82,8 +86,16 @@ main.background {
     margin-bottom: 2vh;
 }
 
+.deceptive-timers .card {
+    display: flex;
+    flex-direction: row;
+    align-content: flex-start;
+}
 
-.confirmshaming {}
+.store-col {
+    display: inline-block;
+    width: 48%;
+}
 
 .confirmshaming ul {
     list-style: none;
