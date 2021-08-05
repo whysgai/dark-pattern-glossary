@@ -33,7 +33,7 @@ const DisguisedAds = () =>
                 </li>
                 <li className="result list-group-item list-group-item-action">
                     <span className="result-prefix">3</span>
-                    <span className="result-text">Pie Are Round Bakery</span>
+                    <span className="result-text">Pie R Round Bakery</span>
                     <span>2/5</span>
                 </li>
                 <li className="result list-group-item list-group-item-action">
