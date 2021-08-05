@@ -86,15 +86,37 @@ main.background {
     margin-bottom: 2vh;
 }
 
-.deceptive-timers .card {
+/* .deceptive-timers .card {
     display: flex;
     flex-direction: row;
     align-content: flex-start;
+} */
+
+.store-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: flex-start;
 }
 
+/* .store-row {
+    display: block;
+    width: 100%;
+} */
+
 .store-col {
-    display: inline-block;
+    display: inline-flex;
     width: 48%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.store-col > * {
+    margin-bottom: 1vh
+}
+
+.cart-btn {
+    align-self: flex-end;
 }
 
 .confirmshaming ul {
