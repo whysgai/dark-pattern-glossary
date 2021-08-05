@@ -66,7 +66,7 @@ main.background {
     width: 75%;
 }
 
-.trammel-net, .switched-answers, .optins, .forced-continuity {
+.trammel-net, .switched-answers, .optins, .forced-continuity, .disguised-ads {
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -87,6 +87,19 @@ main.background {
 }
 
 
+
+
+.disguised-ads .results-list {
+    /* border: thin black solid; */
+    overflow-y: scroll;
+    max-height: 30vh;
+    list-style-type: none;
+}
+
+.disguised-ads .result {
+    display: flex;
+    justify-content: space-between;
+}
 
 .forced-continuity .req-asterisk {
     /* color: red; */
