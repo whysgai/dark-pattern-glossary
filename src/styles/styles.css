@@ -58,15 +58,11 @@ main.background {
     font-weight: 100;
 }
 
-.confirmshaming ul {
-    list-style: none;
-}
-
 .bat-signal-progress {
     width: 75%;
 }
 
-.trammel-net, .switched-answers, .optins, .forced-continuity, .disguised-ads {
+.trammel-net, .switched-answers, .optins, .forced-continuity, .disguised-ads, .confirmshaming {
     width: 100%;
     height: 100%;
     /* display: flex; */
@@ -87,7 +83,11 @@ main.background {
 }
 
 
+.confirmshaming {}
 
+.confirmshaming ul {
+    list-style: none;
+}
 
 .disguised-ads .results-list {
     /* border: thin black solid; */
