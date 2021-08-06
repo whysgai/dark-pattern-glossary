@@ -16,7 +16,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <main className="background">
         <div className="container">
           <div className="card glossary-card">

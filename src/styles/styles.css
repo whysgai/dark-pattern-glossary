@@ -13,20 +13,42 @@
 
 main.background {
     background-color: #282c34;
-    height: 96vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+
+
 .glossary-card {
-    height: 70vh;
+    height: 95vh;
+    margin-top: 5vh;
 }
 
 .glossary-card-body {
     height: 100%;
     display: flex;
+}
+
+.glossary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.glossary-header span:first-child {
+    width: 34%;
+    justify-content: space-evenly;
+}
+
+.glossary-header span:first-child span:first-child{
+    align-self: center;
+}
+
+.glossary-header span:nth-child(2) {
+    width: 75%;
 }
 
 .glossary-index, .glossary-page {
