@@ -39,16 +39,20 @@ main.background {
 }
 
 .glossary-header span:first-child {
-    width: 34%;
-    justify-content: space-evenly;
+    width: 5%;    
+    margin-bottom: 0;
 }
 
-.glossary-header span:first-child span:first-child{
+/* .glossary-header span:first-child span:first-child{
     align-self: center;
-}
+} */
 
 .glossary-header span:nth-child(2) {
-    width: 75%;
+    width: 30%;
+}
+
+.glossary-header span:nth-child(3) {
+    width: 65%;
 }
 
 .glossary-index, .glossary-page {
