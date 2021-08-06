@@ -74,15 +74,27 @@ main.background {
     align-items: center;
 }
 
-.standard-layout .card {
-    margin: 10% 10%;
+.little-padding .card {
+    margin: 7% 7%;
 }
 
-.standard-layout .card-body {
+.little-padding .card-body {
+    padding: 5% 3%;
+}
+
+.little-padding .card-body > * {
+    margin-bottom: 1vh;
+}
+
+.lots-of-padding .card {
+    margin: 7% 7%;
+}
+
+.lots-of-padding .card-body {
     padding: 7% 7%;
 }
 
-.standard-layout .card-body > * {
+.lots-of-padding .card-body > * {
     margin-bottom: 2vh;
 }
 

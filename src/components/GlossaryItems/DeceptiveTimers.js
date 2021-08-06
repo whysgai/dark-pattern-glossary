@@ -7,7 +7,7 @@ const DeceptiveTimers = () => {
     const [cartCount, setCartCount] = useState(0);
 
     return (
-        <div className="deceptive-timers standard-layout">
+        <div className="deceptive-timers little-padding">
             <div className="card card-body">
                 <div className="store-row">                    
                     <div className="store-col">

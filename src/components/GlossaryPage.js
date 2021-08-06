@@ -1,11 +1,11 @@
-import AdditionalItems from "./AdditionalItems";
-import Confirmshaming from "./Confirmshaming";
-import DeceptiveTimers from "./DeceptiveTimers";
-import DisguisedAds from "./DisguisedAds";
-import ForcedContinuity from "./ForcedContinuity";
-import OptIns from "./OptIns";
-import SwitchedAnswers from "./SwitchedAnswers";
-import TrammelNet from "./TrammelNet";
+import AdditionalItems from "./GlossaryItems/AdditionalItems";
+import Confirmshaming from "./GlossaryItems/Confirmshaming";
+import DeceptiveTimers from "./GlossaryItems/DeceptiveTimers";
+import DisguisedAds from "./GlossaryItems/DisguisedAds";
+import ForcedContinuity from "./GlossaryItems/ForcedContinuity";
+import OptIns from "./GlossaryItems/OptIns";
+import SwitchedAnswers from "./GlossaryItems/SwitchedAnswers";
+import TrammelNet from "./GlossaryItems/TrammelNet";
 
 const GlossaryPage = props =>
     <div className="glossary-page">

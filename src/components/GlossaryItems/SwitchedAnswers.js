@@ -4,7 +4,7 @@ const SwitchedAnswers = () => {
     const [page, setPage] = useState(0);
 
     return (
-        <div className="switched-answers standard-layout">
+        <div className="switched-answers lots-of-padding">
             <div className="card card-body">
                 <h3>Bat Signal Installation</h3>
                 {

@@ -18,7 +18,7 @@ const ForcedContinuity = () => {
     }
 
     return (
-        <div className="forced-continuity standard-layout">
+        <div className="forced-continuity little-padding">
             <div className="card card-body">
                 <h3>Begin Your Free Trial</h3>            
                 {

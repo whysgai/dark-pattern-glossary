@@ -2,7 +2,7 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faCertificate} from "@fortawesome/free-solid-svg-icons";
 
 const DisguisedAds = () => 
-    <div className="disguised-ads standard-layout">
+    <div className="disguised-ads little-padding">
         <div className="card card-body">
             <div className="input-group">
                 <label className="input-group-text">
