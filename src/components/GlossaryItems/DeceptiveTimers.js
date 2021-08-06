@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 const DeceptiveTimers = () => {
-    const [page, setPage] = useState(0);
     const [doohickies, setDoohickies] = useState(1);
     const [cartCount, setCartCount] = useState(0);
     const [remaining, setRemaining] = useState(Math.floor(Math.random() * 6) + 1);
