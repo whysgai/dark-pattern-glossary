@@ -5,7 +5,6 @@ const TrammelNet = () => {
     
     return (
         <>
-
             {
                 page === 0 ?
                     <div className="trammel-net lots-of-padding">
