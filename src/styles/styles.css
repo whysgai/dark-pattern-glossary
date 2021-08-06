@@ -131,6 +131,10 @@ main.background {
     align-self: flex-end;
 }
 
+.doohicky-description {
+    text-align: left;
+}
+
 .confirmshaming ul {
     list-style: none;
 }
