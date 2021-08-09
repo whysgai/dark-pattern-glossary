@@ -59,10 +59,14 @@ main.background {
     display: inline-flex;
 }
 
-.glossary-index {
+.glossary-sidebar {
     width: 34%;
     height: 100%;
     border-right: 1px solid rgba(0,0,0,.125);
+}
+
+.glossary-index {
+    width: 100%;
 }
 
 .glossary-definition {

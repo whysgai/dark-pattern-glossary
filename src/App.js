@@ -7,11 +7,19 @@ import GlossaryPage from './components/GlossaryPage.js';
 
 const App = () => {
   const [activeIndex, setActiveIndex] = useState("Welcome");
+  const [processedText, setProcessedText] = useState([]);
 
 
   const selectEntry = entry => {
     console.log("Selected: ", entry);
     setActiveIndex(entry);
+  }
+
+  const processText = rawText => {
+    console.log("Raw text: ", rawText);
+    var newText = rawText.split("\\n ");
+    setProcessedText(newText);
+    console.log("New text: ", newText);
   }
 
   return (
@@ -28,6 +36,8 @@ const App = () => {
                 <GlossaryIndex
                   activeIndex={activeIndex}
                   selectEntry={selectEntry}
+                  processedText={processedText}
+                  processText={processText}
                 />
                 <GlossaryPage
                   activeIndex={activeIndex}

@@ -16,7 +16,11 @@ const GlossaryIndex = props =>
             }
         </div>
         <div className="glossary-description">
-            <p>{props.processedText}</p>
+            {
+                props.processedText.map((para, index) =>
+                    <p key={index} className="glossary-description-para">{para}</p>
+                )
+            }
         </div>
     </div>
 
