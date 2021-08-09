@@ -11,15 +11,12 @@ const App = () => {
 
 
   const selectEntry = entry => {
-    console.log("Selected: ", entry);
     setActiveIndex(entry);
   }
 
   const processText = rawText => {
-    console.log("Raw text: ", rawText);
     var newText = rawText.split("\\n ");
     setProcessedText(newText);
-    console.log("New text: ", newText);
   }
 
   return (

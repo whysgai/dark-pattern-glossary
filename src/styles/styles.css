@@ -69,10 +69,16 @@ main.background {
     width: 100%;
 }
 
-.glossary-definition {
+.glossary-description {
+    border-top: 1px solid rgba(0,0,0,.125);
+    padding: 2vh 1vw;
+    text-align: left;
+}
+
+/* .glossary-definition {
     height: -webkit-fill-available;
     min-height: 75%;
-}
+} */
 
 .glossary-page {
     width: 66%;
