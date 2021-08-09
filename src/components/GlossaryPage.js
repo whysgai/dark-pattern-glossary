@@ -28,7 +28,7 @@ const GlossaryPage = props =>
                                 props.activeIndex === "Opt-Ins" ?
                                     <OptIns/>
                                     :
-                                    props.activeIndex === "Switchted Answers" ?
+                                    props.activeIndex === "Switched Answers" ?
                                         <SwitchedAnswers/> 
                                         :
                                         props.activeIndex === "Trammel Net" ?
