@@ -102,6 +102,11 @@ main.background {
 }
 
 .link-innocuous {
+    color: darkgray;
+    font-weight: 100;
+}
+
+.link-innocuous:hover {
     color: gray;
     font-weight: 100;
 }

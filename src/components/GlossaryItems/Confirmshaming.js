@@ -11,19 +11,19 @@ const Confirmshaming = () =>{
                         <div className="card card-body">
                             <h3>Please choose which excellent emails you'd like to receive:</h3>
                             <label className="btn btn-outline-primary btn-terms" >
-                                Delightful Daily Updates
+                                Delightful Daily Updates &nbsp;
                                 <input type="checkbox" defaultChecked/>
                             </label>
                             <label className="btn btn-outline-primary btn-terms" >
-                                Wonderful Weekly Updates
+                                Wonderful Weekly Updates &nbsp;
                                 <input type="checkbox" defaultChecked/>
                             </label>
                             <label className="btn btn-outline-primary btn-terms" >
-                                Spectacular Sales, Deals, and Steals
+                                Spectacular Sales, Deals, and Steals &nbsp;
                                 <input type="checkbox" defaultChecked/>
                             </label>
                             <label className="btn btn-outline-primary btn-terms" >
-                                Terrific Tips and Tricks
+                                Terrific Tips and Tricks &nbsp;
                                 <input type="checkbox" defaultChecked/>
                             </label>
                             <button className="btn btn-danger" onClick={() => setPage(1)}>Unsubscribe from all (I like a boring inbox)</button>
