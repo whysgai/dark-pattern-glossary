@@ -40,7 +40,9 @@ const App = () => {
                   activeIndex={activeIndex}
                 />
             </div>
-            <div className="card-footer">footer</div>
+            <div className="card-footer">
+              <span className="title-font">Created by Will Cohen at Northeastern University - Spring 2021 - <a href="https://wrcohen.com" target="_blank" rel="noopener noreferrer">wrcohen.com</a></span>
+            </div>
           </div>
         </div>
       </main>
