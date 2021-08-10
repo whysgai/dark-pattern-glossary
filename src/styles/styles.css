@@ -159,6 +159,10 @@ main.background {
     justify-content: space-between;
 }
 
+ul li.hide {
+    display: none;
+}
+
 .red-x {
     color: darkred;
 }
@@ -257,4 +261,8 @@ main.background {
 
 .trammel-net-plan li {
     padding-bottom: 0.5vh;
+}
+
+ul li.hide {
+    display: none;
 }

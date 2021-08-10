@@ -6,8 +6,23 @@ const AdditionalItems = () => {
     const [page, setPage] = useState(0);
     const [doohickies, setDoohickies] = useState(1);
     const [cartCount, setCartCount] = useState(0);
-    const [totalDoohickies, setTotalDoohickies] = useState(0);
-    const [cartEmpty, setCartEmpty] = useState(true);
+    // const [totalDoohickies, setTotalDoohickies] = useState(0);
+    // const [cartEmpty, setCartEmpty] = useState(true);
+    const [additionalItems, setAdditionalItems] = useState([true, true, true, true, true]);
+
+    const addDoohickies = (count) => {
+        setDoohickies(doohickies + count);
+        setCartCount(parseInt(cartCount) + parseInt(count));
+    }
+
+    const hideItem = (position) => {
+        console.log("Hiding ", position)
+        var items = [...additionalItems];
+        items[position] = false;
+        console.log("Items after update ", items);
+        setAdditionalItems(items);
+        setCartCount(cartCount - 1);
+    };
 
     return (
         <>        
@@ -31,7 +46,7 @@ const AdditionalItems = () => {
                                         <label className="input-group-text">
                                             Quantity:                                
                                         </label>
-                                        <input className="form-control" min="1" max="10" placeholder="1" type="number" value={doohickies} onChange={(e) => setDoohickies(e.target.value)}/>
+                                        <input className="form-control" min="1" max="10" placeholder="1" type="number" value={doohickies} onChange={(e) => addDoohickies(e.target.value)}/>
                                     </div>                        
                                     <button className="btn btn-outline-success" 
                                         onClick={
@@ -48,10 +63,11 @@ const AdditionalItems = () => {
                     page === 1 ?
                     // items added to cart
                         <div className="additional-items lots-of-padding">
+                            {}
                             <div className="card card-body">
                                 <h3>Added to cart!</h3>
-                                <p>You just added <span>{cartCount}</span> Doohicky Set(s) to your cart!</p>
-                                <p>Items in cart: <span>{cartCount + 5}</span></p>
+                                <p>You just added <span>{doohickies}</span> Doohicky Set(s) to your cart!</p>
+                                <p>Items in cart: <span>{cartCount}</span></p>
                                 <button className="btn btn-success" onClick={() => setPage(2)}>View Cart</button>
                                 <button className="btn btn-outline-primary" onClick={() => setPage(0)}>Continue Shopping</button>
                             </div>
@@ -62,18 +78,18 @@ const AdditionalItems = () => {
                             <div className="additional-items little-padding">
                                 <div className="card card-body">
                                     <h3>Your Shopping Cart</h3>
-                                    <button className="btn btn-success">Checkout</button>
-                                    <button className="btn btn-outline-primary">Continue Shopping</button>
+                                    <button className="btn btn-success" onClick={() => setPage(3)}>Checkout</button>
+                                    <button className="btn btn-outline-primary" onClick={() => setPage(0)}>Continue Shopping</button>
                                     <ul>
-                                        <li><span>Doohicky Set</span><span>Count: {totalDoohickies} <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li><span>Doohicky Set</span><span>Count: {doohickies} <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
                                     </ul>
                                     <p>Additional items you might enjoy:</p>
                                     <ul>
-                                        <li><span>Whatchamacallit</span><span>Count: 1 <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
-                                        <li><span>Thingamajig</span><span>Count: 1 <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
-                                        <li><span>Whozeewhatzit</span><span>Count: 1 <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
-                                        <li><span>Doodad Pack</span><span>Count: 1 <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
-                                        <li><span>Assorted Bits and Bobs Kit</span><span>Count: 1 <span className="red-x"><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li className={`${additionalItems[0] ? "" : "hide"}`}><span>Whatchamacallit</span><span>Count: 1 <span className="red-x" onClick={() => hideItem(0)}><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li className={`${additionalItems[1] ? "" : "hide"}`}><span>Thingamajig</span><span>Count: 1 <span className="red-x" onClick={() => hideItem(1)}><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li className={`${additionalItems[2] ? "" : "hide"}`}><span>Whozeewhatzit</span><span>Count: 1 <span className="red-x" onClick={() => hideItem(2)}><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li className={`${additionalItems[3] ? "" : "hide"}`}><span>Doodad Pack</span><span>Count: 1 <span className="red-x" onClick={() => hideItem(3)}><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
+                                        <li className={`${additionalItems[4] ? "" : "hide"}`}><span>Assorted Bits and Bobs Kit</span><span>Count: 1 <span className="red-x" onClick={() => hideItem(4)}><FontAwesomeIcon icon={faTimesCircle}/></span></span></li>
                                     </ul>
                                 </div>
                             </div>
