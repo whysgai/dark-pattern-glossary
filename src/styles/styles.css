@@ -92,6 +92,28 @@ main.background {
     width: 66%;
 }
 
+@media (max-device-width: 1500px) {
+    .glossary-card-body {
+        height: 87%;
+    }
+
+    .glossary-index {
+        overflow-y: scroll;
+        height: 40%;
+    }
+
+    .glossary-description {
+        overflow-y: scroll;
+        max-height: 60%;
+    }
+}
+
+@media (max-device-width: 1200px) {
+    .glossary-card-body {
+        height: 78%;
+    }
+}
+
 .strikethrough {
     text-decoration: line-through;
 }
