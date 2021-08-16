@@ -70,7 +70,7 @@ const ForcedContinuity = () => {
                                     <input type="text" className="form-control" id="forced-con-expdate"/>
                                     <label htmlFor="forced-con-expdate">Experation Date</label>
                                 </div> 
-                                <button onClick={() => setPage(2)}>Continue</button>
+                                <button className="btn btn-primary btn-medium-text" onClick={() => setPage(2)}>Continue</button>
                                 <span className="req-legend"><span className="req-asterisk">*</span> = Required</span>
                             </>
                             :
