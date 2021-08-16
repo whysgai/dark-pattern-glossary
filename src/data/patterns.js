@@ -1,6 +1,11 @@
 export default {
     patterns : [
         {
+            index: 0,
+            title: "Welcome",
+            description: "Welcome to the Glossary of Dark Patterns.\\n Dark patterns are tricks and strategies that websites use to take advantage of visitors—to sell them more things, to keep them from leaving, and to collect their data. This site shows how some of the more common patterns work. Rather than real-life examples, it uses simple, exaggerated demonstrations to call attention to what is happening and how your choices are being directed."
+        },
+        {
             index: 1,
             title: "Additional Items",
             description: "While making online purchases, users may find additional items added to their cart. Often, this is done surreptitiously in the hope that the user will complete the sale before the additional items are discovered. Other times, this is presented as a convenience, with related or popular items added to save the shopper time and help them discover new products.\\n The process usually follows one of several practices: a checkbox or radio button on a prior page may be selected, adding specific items to the cart with the user’s un-informed agreement; items may be automatically added to the cart with misleading notices implying the items are suggestions, obfuscating their addition to the purchase; in rare cases, additional items are not displayed until the review step of the checkout process, with the expectation that the user will either miss the new items or be unwilling to go back and edit their order."

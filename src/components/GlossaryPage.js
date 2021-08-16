@@ -1,3 +1,4 @@
+import Welcome from "./GlossaryItems/Welcome";
 import AdditionalItems from "./GlossaryItems/AdditionalItems";
 import Confirmshaming from "./GlossaryItems/Confirmshaming";
 import DeceptiveTimers from "./GlossaryItems/DeceptiveTimers";
@@ -34,7 +35,7 @@ const GlossaryPage = props =>
                                         props.activeIndex === "Trammel Net" ?
                                             <TrammelNet/> 
                                             :
-                                            <span>Welcome</span>
+                                            <Welcome/>
         }
     </div>
 
