@@ -26,6 +26,7 @@ const Confirmshaming = () =>{
                                 Terrific Tips and Tricks &nbsp;
                                 <input type="checkbox" defaultChecked/>
                             </label>
+                            <button className="btn btn-primary">Save</button>
                             <button className="btn btn-danger" onClick={() => setPage(1)}>Unsubscribe from all (I like a boring inbox)</button>
                         </div>
                     </div>
