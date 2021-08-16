@@ -11,10 +11,8 @@ const SwitchedAnswers = () => {
                     page === 0 ?
                         <>
                             <p>This process will guide you through installing your new Bat Signal flying mammal communication app.</p>
-                            <div>
-                                <button className="btn btn-success" onClick={() => setPage(1)}>Yes</button>
-                                <button className="btn btn-outline-danger">No</button>
-                            </div>
+                            <button className="btn btn-success" onClick={() => setPage(1)}>Yes</button>
+                            <button className="btn btn-outline-danger">No</button>
                         </>
                         :
                         page === 1 ?
@@ -32,10 +30,8 @@ const SwitchedAnswers = () => {
                                     <p>Curabitur sollicitudin varius fringilla. Nulla lacinia mollis velit sit amet consequat. Aliquam auctor, justo id luctus bibendum, leo lectus tristique ante, ut rutrum urna metus ac orci. Mauris at eros vitae lorem tincidunt sollicitudin. Phasellus dolor tortor, suscipit in justo et, molestie fringilla sapien. Donec vel mi consequat, convallis turpis eget, porttitor dolor. Praesent mollis ullamcorper urna.</p>
                                     <p>Vestibulum vitae quam sit amet dolor cursus hendrerit et id odio. Mauris tristique, eros a pellentesque ultricies, nulla quam rhoncus nunc, eu sagittis turpis neque nec nisi. Nullam magna diam, vestibulum sed quam eget, consequat laoreet libero. Vivamus nec tempus tellus. Nulla vitae enim non arcu fringilla ornare non porta felis. Vestibulum pellentesque est ut odio interdum dapibus. Pellentesque ultricies vestibulum dignissim. Nulla facilisi. Integer at tempus nulla. Phasellus auctor felis enim, sed sagittis lorem pharetra ut.</p>
                                 </div>
-                                <div>
-                                    <button className="btn btn-success" onClick={() => setPage(2)}>Yes</button>
-                                    <button className="btn btn-outline-danger" onClick={() => setPage(1)}>No</button>
-                                </div>
+                                <button className="btn btn-success" onClick={() => setPage(2)}>Yes</button>
+                                <button className="btn btn-outline-danger" onClick={() => setPage(1)}>No</button>
                             </>
                             :
                             page === 2 ?
